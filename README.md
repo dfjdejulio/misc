@@ -1,16 +1,33 @@
 Misc Utilities
 ==============
 
-I've written a bunch of little programs to help me get things done over the decades.
-May as well stash them here...
+I've written a bunch of little programs to help me get things done
+over the decades.  May as well stash them here...
 
 iota
 ----
 
-A trivial command-line program I built for my own use, based on APL's "iota" operator.
+A trivial command-line program I built for my own use, based on APL's
+"iota" operator.
 
-There's really almost nothing to it.  It was useful to me back in the day when it was
-harder to do looping and such in shell scripts.
+There's really almost nothing to it.  It was useful to me back in the
+day when it was harder to do looping and such in shell scripts.
 
-Since it doesn't have any special dependencies, you can built it by typing "make iota"
-even without an Makefile, as long as you have C89 and a decent "make".
+Since it doesn't have any special dependencies, you can built it by
+typing "make iota" even without an Makefile, as long as you have C89
+and a decent "make".
+
+bifurcate
+---------
+
+I was helping some folks with an experiment, and they needed to split
+a list into two equal sized groups without changing the sort order.
+So I whipped this up to do the job.
+
+roll
+----
+
+A trivial die-rolling program for some quick D&D stuff I was doing once.
+In addition to the "3d6" syntax, you can say "3b4d6" to mean "3 best of
+4 rolls of a 6-sided die".  So you could roll a 1st edition character by
+typing this: "roll -r 6 3b4d6".
