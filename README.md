@@ -1,5 +1,11 @@
+Misc Utilities
+==============
+
+I've written a bunch of little programs to help me get things done over the decades.
+May as well stash them here...
+
 iota
-====
+----
 
 A trivial command-line program I built for my own use, based on APL's "iota" operator.
 
