@@ -31,3 +31,8 @@ A trivial die-rolling program for some quick D&D stuff I was doing once.
 In addition to the "3d6" syntax, you can say "3b4d6" to mean "3 best of
 4 rolls of a 6-sided die".  So you could roll a 1st edition character by
 typing this: "roll -r 6 3b4d6".
+
+jack
+----
+
+All work and no play makes Jack a dull boy.
