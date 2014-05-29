@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <strings.h>
 #include <time.h>
 
 #define ROLL(x) ((random())%(x)+1)
@@ -82,7 +83,7 @@ main(int argc,
     } else {
       for (j=0; j<r; j++) {
 	if (count++) {
-	  printf(spacer);
+	  fputs(spacer, stdout);
 	}
 	printf("%d", rolls(argv[i]));
       }
