@@ -13,8 +13,11 @@ inneruuid=`uuidgen`
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+<key>PayloadDisplayName</key><string>' > $outfile
+/bin/echo -n $fontfile >> $outfile
+/bin/echo -n '</string>
 <key>PayloadIdentifier</key>
-<string>' > $outfile
+<string>' >> $outfile
 /bin/echo -n `hostname`.$outeruuid >> $outfile
 /bin/echo -n '</string>
 <key>PayloadType</key><string>Configuration</string>
