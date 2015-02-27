@@ -36,3 +36,16 @@ jack
 ----
 
 All work and no play makes Jack a dull boy.
+
+font2mobileconfig.sh
+--------------------
+
+So, iOS can use TrueType fonts, but installing them is a pain in the
+tuchus.  You can't just install them.  The "normal" way to do this is
+for someone with the Apple-provided complex iOS provisioning tools to
+build a provisioning profile that contains the font.  But, the format is
+actually just a standard XML plist with pretty well-defined keys and values
+and stuff, so I wrote this shell script to turn any TTF (or OTF) into
+a ".mobileconfig" file that instlals the font in question.
+
+(It's pretty badly written right now, but it gets the job done for me.)
