@@ -1,0 +1,11 @@
+.Dd 4/30/14
+.Dt knowed 1
+.\".Os Darwin
+.Sh NAME
+.Nm roll
+.Sh SYNOPSIS
+A synopsis will go here.
+.Sh DESCRIPTION
+A longer description happens now.
+.Sh SEE ALSO
+Move along, move along.
