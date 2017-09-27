@@ -49,3 +49,13 @@ and stuff, so I wrote this shell script to turn any TTF (or OTF) into
 a ".mobileconfig" file that instlals the font in question.
 
 (It's pretty badly written right now, but it gets the job done for me.)
+
+apfs_clone
+----------
+
+The APFS filesystem supports cloning files, which means the production of
+space-efficient duplicates that use copy-on-write as you modify them.  But
+the normal default Unix/POSIX ways of copying files does *not* produce that
+kind of clone.  You have to use a new system call to get the cloning behavior.
+So, I whipped up a trivial command-line tool that's not much more than a wrapper
+around one of those system calls.
