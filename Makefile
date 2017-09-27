@@ -1,4 +1,4 @@
-ALL=roll iota bifurcate jack
+ALL=roll iota bifurcate jack apfs_clone
 
 all: $(ALL)
 
