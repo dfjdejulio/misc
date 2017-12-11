@@ -48,6 +48,21 @@ main(int argc,
 	case 0x20:
 	  name = " (space)";
 	  break;
+	case 0x1B:
+	  name = " (escape)";
+	  break;
+	case 0x1C:
+	  name = " (field separator)";
+	  break;
+	case 0x1D:
+	  name = " (group separator)";
+	  break;
+	case 0x1E:
+	  name = " (record separator)";
+	  break;
+	case 0x1F:
+	  name = " (unit esparator)";
+	  break;
 	case 0x7f:
 	  name = " (del)";
 	  break;
