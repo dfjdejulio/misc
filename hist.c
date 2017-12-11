@@ -8,6 +8,7 @@ main(int argc,
 {
   int counts[256];
   int i, c;
+  char *name;
 
   bzero(counts, sizeof(int) * 256);
 
@@ -33,7 +34,29 @@ main(int argc,
 
   for (i=0; i<256; i++) {
     if (counts[i]) {
-      printf("0x%02X: %d\n", i, counts[i]);
+      printf("0x%02X", i);
+      if (i > 0x20 && i < 0x7f) {
+	printf(" (%c)", i);
+      } else {
+	switch (i) {
+	case 0x09:
+	  name = " (tab)";
+	  break;
+	case 0x0A:
+	  name = " (newline)";
+	  break;
+	case 0x20:
+	  name = " (space)";
+	  break;
+	case 0x7f:
+	  name = " (del)";
+	  break;
+	default:
+	  name = "";
+	}
+	fputs(name, stdout);
+      }
+      printf(": %d\n", counts[i]);
     }
   }
 
